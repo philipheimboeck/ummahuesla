@@ -1,0 +1,29 @@
+{
+  "name": "ummahuesla",
+  "version": "0.1.0",
+  "description": "Umma Hüsla Hackathon Idea Finder",
+  "main": "index.js",
+  "dependencies": {
+    "alexa-sdk": "^1.0.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/philipheimboeck/ummahuesla.git"
+  },
+  "keywords": [
+    "alexa",
+    "uh",
+    "hackathon",
+    "ummahuesla"
+  ],
+  "author": "Philip Heimböck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philipheimboeck/ummahuesla/issues"
+  },
+  "homepage": "https://github.com/philipheimboeck/ummahuesla#readme"
+}
