@@ -6,11 +6,10 @@ const app = new App();
 const handlers = {
     'IdeaIntent': function () {
         app.establishConnection();
-        app.fetchRandomIdea((name) => {
+        app.fetchRandomIdea((message) => {
             app.close();
-            console.log('Sending: Wie wäre es mit ' + name);
-            this.emit(':tell', 'Wie wäre es mit ' + name);
-            console.log("Message Send");
+            console.log('Sending Message', message);
+            this.emit(':tell', message);
         });
     }
 };
