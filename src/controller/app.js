@@ -84,6 +84,30 @@ export default class App {
             );
     }
 
+    createProject(name, gender, callback) {
+        const wrapper = Rx.Observable.fromNodeCallback(this.persistence.createProject);
+        wrapper(name, gender)
+            .subscribe(result => callback(false, result));
+    }
+
+    createAdjective(male, female, thing, callback) {
+        const wrapper = Rx.Observable.fromNodeCallback(this.persistence.createAdjective);
+        wrapper(male, female, thing)
+            .subscribe(result => callback(false, result));
+    }
+
+    createObject(name, callback) {
+        const wrapper = Rx.Observable.fromNodeCallback(this.persistence.createObject);
+        wrapper(name)
+            .subscribe(result => callback(false, result));
+    }
+
+    createProblem(problem, callback) {
+        const wrapper = Rx.Observable.fromNodeCallback(this.persistence.createProblem);
+        wrapper(problem)
+            .subscribe(result => callback(false, result));
+    }
+
     close() {
         this.persistence.close();
     }

@@ -42,6 +42,22 @@ export default class Persistence {
         self.pool.query('SELECT * FROM problems WHERE id = $1::int', [id], callback);
     }
 
+    createProject(subject, gender, callback) {
+        self.pool.query('INSERT INTO projects (subject, gender) VALUES ($1::text, $2::int)', [subject, gender], callback);
+    }
+
+    createAdjective(male, female, thing, callback) {
+        self.pool.query('INSERT INTO adjectives (adjective_male, adjective_female, adjective_thing) VALUES ($1::text, $2::text, $3::text)', [male, female, thing], callback);
+    }
+
+    createObject(name, callback) {
+        self.pool.query('INSERT INTO objects (name) VALUES ($1::text)', [name], callback);
+    }
+
+    createProblem(problem, callback) {
+        self.pool.query('INSERT INTO problems (problem) VALUES ($1::text)', [problem], callback);
+    }
+
     close() {
         self.pool.close();
     }

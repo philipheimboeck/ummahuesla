@@ -2,7 +2,7 @@
   "name": "ummahuesla",
   "version": "0.1.0",
   "description": "Umma Hüsla Hackathon Idea Finder",
-  "main": "index.js",
+  "main": "web/index.js",
   "dependencies": {
     "alexa-sdk": "^1.0.10",
     "any-db": "^2.2.0",
@@ -10,9 +10,9 @@
     "any-db-postgres": "^2.1.5",
     "babel-cli": "^6.24.1",
     "babel-preset-node6": "^11.0.0",
+    "body-parser": "^1.17.2",
     "dotenv": "^4.0.0",
-    "http": "0.0.0",
-    "node-router": "^0.1.5",
+    "express": "^4.15.3",
     "rx": "^4.1.0"
   },
   "devDependencies": {

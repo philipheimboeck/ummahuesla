@@ -1,5 +1,5 @@
 const Alexa = require('alexa-sdk');
-import App from './controller/app';
+import App from '../controller/app';
 
 const app = new App();
 
