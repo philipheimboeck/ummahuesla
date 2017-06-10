@@ -5,7 +5,7 @@ const answers = {
 const articles = {
     1: 'einen',
     2: 'eine',
-    3: 'eines'
+    3: 'ein'
 }
 
 export function tellIdea(gender, adjective, subject, object, problem) {
